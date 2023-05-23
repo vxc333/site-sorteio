@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Sorteio de Times</title>
+  </head>
+  <body>
+    <header>
+      <img src="img/270437.png" alt="" />
+      <h1>Sorteio de Times</h1>
+      <h2>Pelada do Pelé</h2>
+      <form class="formulario" method="POST" action="sorteio.php">
+        <div class="metade left">
+          <label for="num-teams">Quantidade de Times:</label>
+          <input type="number" name="num-teams" min="1" required />
+
+          <label for="players-per-team">Jogadores por Time:</label>
+          <input type="number" name="players-per-team" min="1" required />
+        </div>
+        <div class="metade right">
+          <label for="player-names">Nomes dos Jogadores:</label>
+          <textarea name="player-names" rows="5" required></textarea>
+        </div>
+        <input type="submit" value="Enviar Dados" class="btn-submit" />
+      </form>
+    </header>
+  </body>
+</html>
